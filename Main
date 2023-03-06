@@ -1,4 +1,8 @@
-		if getgenv().lloaded == true then
+local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/ENy9ANUd"))()
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+for i,v in pairs(HWIDTable) do
+ if v == HWID then
+if getgenv().lloaded == true then
     return
    end
    getgenv().lloaded = true
@@ -406,3 +410,5 @@
            end
            wait(1)
        end
+     end
+end
